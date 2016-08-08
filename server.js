@@ -9,10 +9,7 @@ app.get('/', function(req, res){
     });
 });
 
-function getBrowerInformation(){
-
-}
-
-app.listen(3000, function() {
+var port = Number(process.env.PORT || 3000);
+app.listen(port, function() {
     console.log('App listening on port 3000');
 });
